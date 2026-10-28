@@ -1,0 +1,113 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Project | Ready for Vercel</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-dot"></span>
+        <span class="logo-text">MyWebApp</span>
+      </div>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-theme" title="Toggle Light/Dark Mode" aria-label="Toggle theme">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <!-- Hero Section -->
+    <section class="hero-card">
+      <div class="avatar-badge-wrap">
+        <div class="avatar">🚀</div>
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          <span>Ready to Deploy</span>
+        </div>
+      </div>
+
+      <h1 class="hero-title" id="greetingTitle">Hello, World!</h1>
+      <p class="hero-subtitle">
+        This is my practice website created for the <strong>Web Deployment SOP</strong> assignment. 
+        It is built with clean HTML, CSS, and JavaScript.
+      </p>
+
+      <!-- Interactive Counter Card -->
+      <div class="interactive-box">
+        <p class="interactive-label">Interactive Test Feature</p>
+        <div class="counter-wrap">
+          <button id="likeBtn" class="btn-primary">
+            ❤️ Click to Cheer <span id="likeCount">0</span>
+          </button>
+          <button id="resetBtn" class="btn-secondary">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Features / Cards -->
+    <section class="projects-section">
+      <h2 class="section-title">Deployment Checklist</h2>
+      <div class="grid-cards">
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3>1. Local Testing</h3>
+          <p>Created in VS Code, tested locally using browser preview with zero syntax errors.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📦</div>
+          <h3>2. Git & GitHub</h3>
+          <p>Committed cleanly to git repository and pushed to GitHub main branch.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">▲</div>
+          <h3>3. Vercel Hosting</h3>
+          <p>Connected via GitHub single sign-on and deployed live with free global HTTPS.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile / Contact Box -->
+    <section class="contact-card">
+      <h2>Project Details</h2>
+      <p class="contact-desc">
+        Customize this section with your own name, school/class details, or social media links.
+      </p>
+      <div class="details-list">
+        <div class="detail-item">
+          <span class="detail-label">Developer:</span>
+          <span class="detail-val">Student Name</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Tech Stack:</span>
+          <span class="detail-val">HTML5, CSS3, Vanilla JS</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Target Host:</span>
+          <span class="detail-val">Vercel (Hobby Tier)</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 My Web App. Standard Operating Procedure (SOP) Project.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
